@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B526C718-2D1B-4D77-8BC5-F6115CA34433}</ProjectGuid>
+    <ProjectGuid>{DEF03CEF-C36F-4D76-8FE4-B83C55E4E2DD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LSP</RootNamespace>
-    <AssemblyName>LSP</AssemblyName>
+    <RootNamespace>ISP</RootNamespace>
+    <AssemblyName>ISP</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,16 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GoodExample\Amphibians.cs" />
-    <Compile Include="GoodExample\Dolphin.cs" />
-    <Compile Include="GoodExample\Interfaces\ISwimmer.cs" />
-    <Compile Include="GoodExample\Swimmers.cs" />
-    <Compile Include="GoodExample\Frog.cs" />
-    <Compile Include="GoodExample\Interfaces\IWalking.cs" />
-    <Compile Include="GoodExample\Walking.cs" />
-    <Compile Include="PoorExample\Amphibians.cs" />
-    <Compile Include="PoorExample\Dolphin.cs" />
-    <Compile Include="PoorExample\Frog.cs" />
+    <Compile Include="GoodExample\Airplane.cs" />
+    <Compile Include="GoodExample\Car.cs" />
+    <Compile Include="GoodExample\Interfaces\IEngine.cs" />
+    <Compile Include="GoodExample\Interfaces\IFlyable.cs" />
+    <Compile Include="GoodExample\Interfaces\ISailable.cs" />
+    <Compile Include="GoodExample\Interfaces\IVehicle.cs" />
+    <Compile Include="GoodExample\Sailboat.cs" />
+    <Compile Include="PoorExample\Airplane.cs" />
+    <Compile Include="PoorExample\Car.cs" />
+    <Compile Include="PoorExample\Interfaces\IVehicle.cs" />
+    <Compile Include="PoorExample\Sailboat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

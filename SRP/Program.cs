@@ -1,5 +1,4 @@
-﻿using SRP.GoodExample;
-using System;
+﻿using System;
 
 namespace SRP
 {
@@ -14,14 +13,14 @@ namespace SRP
 
         static void PoorExample()
         {
-            PoorExample.Person person = new PoorExample.Person("abc@def.com", "Orhan","Veli");
+            PoorExample.Person person = new PoorExample.Person("abc@def.com", "name","surname");
             Console.WriteLine("Person full name : {0} {1} , e-mail : {2}",person.FirstName,person.Surname,person.Email);
         }
 
         static void GoodExample()
         {
-            Email email = new Email("abc@def.com");
-            GoodExample.Person person = new GoodExample.Person(email, "Özdemir", "Asaf");
+            GoodExample.Email email = new GoodExample.Email("abc@def.com");
+            GoodExample.Person person = new GoodExample.Person(email, "name", "surname");
             Console.WriteLine("Person full name : {0} {1} , e-mail : {2}", person.FirstName, person.Surname, person.Email.EmailAddress);
         }
 
