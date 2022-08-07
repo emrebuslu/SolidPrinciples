@@ -2,7 +2,7 @@
 
 namespace LSP.GoodExample
 {
-    public class Amphibians : ISwimmer , IWalking
+    public class Amphibians
     {
         public virtual void Walk()
         {

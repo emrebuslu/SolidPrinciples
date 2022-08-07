@@ -2,7 +2,7 @@
 
 namespace LSP.GoodExample
 {
-    public class Swimmers : ISwimmer
+    public class Swimmers
     {
         public virtual void Swim()
         {

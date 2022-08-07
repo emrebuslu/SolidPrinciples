@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GoodExample\Factory.cs" />
+    <Compile Include="GoodExample\Abstraction\IProduct.cs" />
+    <Compile Include="GoodExample\Abstraction\IProductDataAccess.cs" />
+    <Compile Include="GoodExample\Product.cs" />
+    <Compile Include="GoodExample\ProductBusinessLogic.cs" />
+    <Compile Include="GoodExample\ProductDataAccess.cs" />
+    <Compile Include="PoorExample\Factory.cs" />
     <Compile Include="PoorExample\Product.cs" />
     <Compile Include="PoorExample\ProductBusinessLogic.cs" />
     <Compile Include="PoorExample\ProductDataAccess.cs" />
