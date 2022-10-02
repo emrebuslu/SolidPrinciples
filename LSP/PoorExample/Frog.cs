@@ -12,5 +12,9 @@ namespace LSP.PoorExample
         {
             Console.WriteLine("Frog is walking");
         }
+        public void Hunt()
+        {
+            Console.WriteLine("Frog is Hunting");
+        }
     }
 }

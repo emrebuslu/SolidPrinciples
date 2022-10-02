@@ -12,5 +12,9 @@ namespace LSP.GoodExample
         {
             Console.WriteLine("Frog is swimming");
         }
+        public void Hunt()
+        {
+            Console.WriteLine("Frog is Hunting");
+        }
     }
 }

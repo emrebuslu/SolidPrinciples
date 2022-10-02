@@ -8,6 +8,10 @@ namespace LSP.PoorExample
         {
             Console.WriteLine("Dolphin is swimming");
         }
+        public void MakeShow()
+        {
+            Console.WriteLine("Dolphin is making show");
+        }
 
         /* <<< Liskov Substitution Principle VIOLATE */
         public override void Walk()

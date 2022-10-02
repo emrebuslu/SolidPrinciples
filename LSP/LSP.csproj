@@ -45,11 +45,8 @@
   <ItemGroup>
     <Compile Include="GoodExample\Amphibians.cs" />
     <Compile Include="GoodExample\Dolphin.cs" />
-    <Compile Include="GoodExample\Interfaces\ISwimmer.cs" />
     <Compile Include="GoodExample\Swimmers.cs" />
     <Compile Include="GoodExample\Frog.cs" />
-    <Compile Include="GoodExample\Interfaces\IWalking.cs" />
-    <Compile Include="GoodExample\Walking.cs" />
     <Compile Include="PoorExample\Amphibians.cs" />
     <Compile Include="PoorExample\Dolphin.cs" />
     <Compile Include="PoorExample\Frog.cs" />

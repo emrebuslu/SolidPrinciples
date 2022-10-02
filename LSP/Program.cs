@@ -13,23 +13,27 @@ namespace LSP
 
         static void PoorExample()
         {
-            PoorExample.Amphibians frog = new PoorExample.Frog();
+            PoorExample.Frog frog = new PoorExample.Frog();
             frog.Walk();
             frog.Swim();
+            frog.Hunt();
 
-            PoorExample.Amphibians dolphin = new PoorExample.Dolphin();
+            PoorExample.Dolphin dolphin = new PoorExample.Dolphin();
             dolphin.Swim();
             dolphin.Walk();//poor method
+            dolphin.MakeShow();
         }
 
         static void GoodExample()
         {
-            GoodExample.Amphibians frog = new GoodExample.Frog();
+            GoodExample.Frog frog = new GoodExample.Frog();
             frog.Walk();
             frog.Swim();
+            frog.Hunt();
 
-            GoodExample.Swimmers dolphin = new GoodExample.Dolphin();
+            GoodExample.Dolphin dolphin = new GoodExample.Dolphin();
             dolphin.Swim();
+            dolphin.MakeShow();
         }
     }
 }
