@@ -6,11 +6,11 @@ namespace LSP.PoorExample
     {
         public virtual void Walk()
         {
-            Console.WriteLine("Walking");
+            Console.WriteLine("Amphibians can walk");
         }
         public virtual void Swim()
         {
-            Console.WriteLine("Swimming");
+            Console.WriteLine("Amphibians can swim");
         }
     }
 }
