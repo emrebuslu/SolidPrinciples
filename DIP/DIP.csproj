@@ -43,16 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GoodExample\Factory.cs" />
-    <Compile Include="GoodExample\Abstraction\IProduct.cs" />
-    <Compile Include="GoodExample\Abstraction\IProductDataAccess.cs" />
-    <Compile Include="GoodExample\Product.cs" />
-    <Compile Include="GoodExample\ProductBusinessLogic.cs" />
-    <Compile Include="GoodExample\ProductDataAccess.cs" />
-    <Compile Include="PoorExample\Factory.cs" />
-    <Compile Include="PoorExample\Product.cs" />
-    <Compile Include="PoorExample\ProductBusinessLogic.cs" />
-    <Compile Include="PoorExample\ProductDataAccess.cs" />
+    <Compile Include="GoodExample\Abstraction\ILogger.cs" />
+    <Compile Include="GoodExample\LogWriter.cs" />
+    <Compile Include="GoodExample\MysqlLogger.cs" />
+    <Compile Include="GoodExample\OracleLogger.cs" />
+    <Compile Include="PoorExample\LogWriter.cs" />
+    <Compile Include="PoorExample\MysqlLogger.cs" />
+    <Compile Include="PoorExample\OracleLogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

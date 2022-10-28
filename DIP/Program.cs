@@ -1,9 +1,5 @@
 ﻿using DIP.PoorExample;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DIP
 {
@@ -12,14 +8,22 @@ namespace DIP
         static void Main(string[] args)
         {
             PoorExample();
-
+            //GoodExample();
             Console.ReadKey();
         }
         static void PoorExample()
         {
-            ProductBusinessLogic productBusinessLogic = new ProductBusinessLogic();
-            Product product = productBusinessLogic.GetProductInfo(1);
-            Console.WriteLine($"Product's name : {product.Name} \nProduct's price : {product.Price}\nProduct's trademark : {product.Trademark}");
+            LogWriter logger = new LogWriter();
+            logger.WriteLogToMysql();
+            logger.WriteLogToOracle();
+        }
+        static void GoodExample()
+        {
+            GoodExample.LogWriter mysqlLogWriter = new GoodExample.LogWriter(new GoodExample.MysqlLogger());
+            mysqlLogWriter.WriteLog();
+
+            GoodExample.LogWriter oracleLogWriter = new GoodExample.LogWriter(new GoodExample.OracleLogger());
+            oracleLogWriter.WriteLog();
         }
     }
 }
