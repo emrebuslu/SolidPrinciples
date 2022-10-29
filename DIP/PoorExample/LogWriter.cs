@@ -2,6 +2,7 @@
 {
     public class LogWriter
     {
+        /* <<< Dependency Inversion Principle VIOLATE */
         public void WriteLogToOracle()
         {
             OracleLogger oracleLogger = new OracleLogger();
@@ -13,6 +14,6 @@
             MysqlLogger mysqlLogger = new MysqlLogger();
             mysqlLogger.WriteLog();
         }
-
+        /* Dependency Inversion Principle VIOLATE >>> */
     }
 }

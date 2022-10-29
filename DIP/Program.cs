@@ -1,14 +1,14 @@
 ﻿using DIP.PoorExample;
 using System;
-
+ 
 namespace DIP
 {
     class Program
     {
         static void Main(string[] args)
         {
-            PoorExample();
-            //GoodExample();
+            //PoorExample();
+            GoodExample();
             Console.ReadKey();
         }
         static void PoorExample()
